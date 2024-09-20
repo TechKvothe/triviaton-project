@@ -50,6 +50,8 @@ function handleQuestion(index) {
 
   answers.forEach((answer) => {
     answer.addEventListener("click", (e) => {
+      correct.currentTime = 0;
+      wrong.currentTime = 0;
       num.push(index);
       if (e.target.textContent.substring(1) === questions[index].correctAnswer) {
         popUp.innerHTML = `¡Correcto!`;

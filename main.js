@@ -9,16 +9,18 @@ const createWindow = () => {
   const mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
+    icon: 'images/brain.png',
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
       devTools: false
     }
   })
 
-  // and load the index.html of the app.
   mainWindow.maximize();
-  mainWindow.setMenuBarVisibility(false)
-  mainWindow.loadFile('index.html')
+  mainWindow.setMenuBarVisibility(false);
+
+  // and load the index.html of the app.
+  mainWindow.loadFile('index.html');
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
@@ -29,6 +31,7 @@ const createWindow = () => {
 // Some APIs can only be used after this event occurs.
 app.whenReady().then(() => {
   createWindow()
+  
 
   app.on('activate', () => {
     // On macOS it's common to re-create a window in the app when the
