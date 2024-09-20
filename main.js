@@ -12,7 +12,7 @@ const createWindow = () => {
     icon: 'images/brain.png',
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
-      devTools: false
+      devTools: true
     }
   })
 

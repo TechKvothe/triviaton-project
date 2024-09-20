@@ -2,7 +2,8 @@ import { questions } from "./questions.js";
 
 const letters = ["A", "B", "C", "D", "E"];
 let num = [];
-
+let nume = [];
+let possibleRandom;
 var wrong = new Audio('songs/wrong.mp3');
 var correct = new Audio('songs/correct.mp3');
 const questionContainer = document.getElementById("questionContainer");
@@ -29,39 +30,37 @@ function getRandomNumberWithoutRepetition (min, max, array) {
 let index = getRandomNumberWithoutRepetition(0, (questions.length-1), num);
 
 function handleQuestion(index) {
-  let nume = [];
   let answerLength = questions[index].possibleAnswers.length;
   let i=0;
   num.push(index);
-
+  nume = []
   questionContainer.innerHTML = `<p>${questions[index].question}</p>`;
 
-  // answers
   answerContainer.innerHTML = "";
 
-  while (i < (answerLength - 1)) {
-    let possibleRandom = getRandomNumberWithoutRepetition(0, (answerLength-1), nume);
+  while (i < answerLength) {
+    possibleRandom = getRandomNumberWithoutRepetition(0, answerLength, nume);
     nume.push(possibleRandom);
     answerContainer.innerHTML += `<div><button><p class = "button">${letters[i]}</p><p>${questions[index].possibleAnswers[possibleRandom]}</p></button></div>`;
     i++;
   }
-
+  console.log(nume);
   let answers = document.querySelectorAll("button");
 
   answers.forEach((answer) => {
     answer.addEventListener("click", (e) => {
-      correct.currentTime = 0;
-      wrong.currentTime = 0;
       num.push(index);
       if (e.target.textContent.substring(1) === questions[index].correctAnswer) {
         popUp.innerHTML = `¡Correcto!`;
         popUp.style.color = "green";
         correct.play();
+        correct.currentTime = 0;
         showPopUp();
       } else {
         popUp.innerHTML = `¡Incorrecto!`;
         popUp.style.color = "red";
         wrong.play();
+        wrong.currentTime = 0;
         showPopUp();
       }
     });
