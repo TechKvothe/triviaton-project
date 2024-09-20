@@ -2,7 +2,7 @@ import { questions } from "./questions.js";
 
 const letters = ["A", "B", "C", "D", "E"];
 let num = [];
-let x;
+
 var wrong = new Audio('songs/wrong.mp3');
 var correct = new Audio('songs/correct.mp3');
 const questionContainer = document.getElementById("questionContainer");
@@ -17,32 +17,39 @@ function showPopUp() {
 }
 
 // Get a non-repeating random number
-const getRandomNumberWithoutRepetition = (min, max) => {
+function getRandomNumberWithoutRepetition (min, max, array) {
+  let x = 0;
   x = Math.floor(Math.random() * (max - min) + min);
-  while (num.includes(x)) {
+  while (array.includes(x)) {
     x = Math.floor(Math.random() * (max - min) + min);
   }
   return x;
 }
 
-let index = getRandomNumberWithoutRepetition(0, (questions.length-1));
-
+let index = getRandomNumberWithoutRepetition(0, (questions.length-1), num);
 
 function handleQuestion(index) {
+  let nume = [];
+  let answerLength = questions[index].possibleAnswers.length;
+  let i=0;
+  num.push(index);
+
   questionContainer.innerHTML = `<p>${questions[index].question}</p>`;
 
   // answers
   answerContainer.innerHTML = "";
 
-  questions[index].possibleAnswers.forEach((answer) => {
-    answerContainer.innerHTML += `<div><button><p class = "button">${letters[questions[index].possibleAnswers.indexOf(answer)]}</p><p>${answer}</p></button></div>`;
-  });
+  while (i < (answerLength - 1)) {
+    let possibleRandom = getRandomNumberWithoutRepetition(0, (answerLength-1), nume);
+    nume.push(possibleRandom);
+    answerContainer.innerHTML += `<div><button><p class = "button">${letters[i]}</p><p>${questions[index].possibleAnswers[possibleRandom]}</p></button></div>`;
+    i++;
+  }
 
   let answers = document.querySelectorAll("button");
 
   answers.forEach((answer) => {
     answer.addEventListener("click", (e) => {
-      console.log(e.target.textContent.substring(1));
       num.push(index);
       if (e.target.textContent.substring(1) === questions[index].correctAnswer) {
         popUp.innerHTML = `¡Correcto!`;
@@ -60,12 +67,12 @@ function handleQuestion(index) {
 }
 
 popUpContainer.addEventListener("click", (e) => {
-  if (num.length === (questions.length - 1)) {
+  if (num.length == questions.length) {
     popUp.innerHTML = `¡Gracias por participar!`;
     popUp.style.color = "pink";
   } else {
     showPopUp();
-    handleQuestion(getRandomNumberWithoutRepetition(0, (questions.length-1)));
+    handleQuestion(getRandomNumberWithoutRepetition(0, (questions.length-1), num));
   } 
 });
 

@@ -9,14 +9,15 @@ const createWindow = () => {
   const mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
-    autoHideMenuBar: true,
     webPreferences: {
-      preload: path.join(__dirname, 'preload.js')
+      preload: path.join(__dirname, 'preload.js'),
+      devTools: false
     }
   })
 
   // and load the index.html of the app.
   mainWindow.maximize();
+  mainWindow.setMenuBarVisibility(false)
   mainWindow.loadFile('index.html')
 
   // Open the DevTools.
