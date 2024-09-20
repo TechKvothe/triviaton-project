@@ -273,6 +273,256 @@ export const questions = [
       correctAnswer: "Modelo OSI",
     },
     {
+      question: "¿Cuál es el protocolo comúnmente utilizado para la transferencia segura de archivos grandes entre cliente y servidor?",
+      possibleAnswers: ["FTP", "HTTP", "SFTP", "SMTP"],
+      correctAnswer: "SFTP",
+    },
+    {
+      question: "¿Qué tipo de cable se utiliza comúnmente para las redes Ethernet?",
+      possibleAnswers: ["Coaxial", "Fibra óptica", "Cable de par trenzado", "HDMI"],
+      correctAnswer: "Cable de par trenzado",
+    },
+    {
+      question: "¿Cuál de los siguientes NO es un algoritmo?",
+      possibleAnswers: ["QuickSort", "MergeSort", "MikhailNone", "BubbleSort"],
+      correctAnswer: "MikhailNone",
+    },
+    {
+      question: "¿Cuál de estas no es una marca de fuente de poder?",
+      possibleAnswers: ["Corsair", "EVGA", "MSI", "Nvidia"],
+      correctAnswer: "Nvidia",
+    },
+    {
+      question: "¿Qué significa la sigla RAM?",
+      possibleAnswers: ["Random Access Memory", "Readable Active Memory", "Rapid Action Module", "Rewritable Archive Memory"],
+      correctAnswer: "Random Access Memory",
+    },
+    {
+      question: "¿Cuál de las siguientes opciones NO es un dispositivo de entrada?",
+      possibleAnswers: ["Teclado", "Ratón", "Monitor", "Escáner"],
+      correctAnswer: "Monitor",
+    },
+    {
+      question: "¿Cuál de estos no es un dispositivo de salida?",
+      possibleAnswers: ["Impresora", "Altavoces", "Monitor", "Teclado"],
+      correctAnswer: "Teclado",
+    },
+    {
+      question: "¿Cuál fue el primer chatbot?",
+      possibleAnswers: ["Siri", "ELIZA", "Watson", "Alexa"],
+      correctAnswer: "ELIZA",
+    },
+    {
+      question: "¿Qué ocurre si una fuente de poder no abastece todo el hardware de un setup informático?",
+      possibleAnswers: ["El sistema operativo se corrompe", "El hardware deja de funcionar correctamente o el sistema puede apagarse", "Los datos se eliminan automáticamente", "La velocidad de procesamiento se incrementa"],
+      correctAnswer: "El hardware deja de funcionar correctamente o el sistema puede apagarse",
+    },
+    {
+      question: "¿Qué significa la sigla ROM?",
+      possibleAnswers: ["Read-Only Memory", "Random Operating Module", "Rewritable Output Memory", "Rapid Operating Memory"],
+      correctAnswer: "Read-Only Memory",
+    },
+    {
+      question: "¿Qué es un diccionario de datos?",
+      possibleAnswers: ["Una herramienta para realizar cálculos matemáticos", "Un documento que describe los campos y estructuras de una base de datos", "Un programa que gestiona la seguridad de una red", "Un tipo de dispositivo de almacenamiento"],
+      correctAnswer: "Un documento que describe los campos y estructuras de una base de datos",
+    },
+    {
+      question: "¿Qué componente de hardware almacena datos a largo plazo, incluyendo el sistema operativo y los archivos?",
+      possibleAnswers: ["Memoria RAM", "Disco Duro", "Tarjeta de Video (GPU)", "CPU"],
+      correctAnswer: "Disco Duro",
+    },
+    {
+      question: "¿Cuál de las siguientes tarjetas se encarga de administrar el sonido en una computadora?",
+      possibleAnswers: ["GPU", "CPU", "Tarjeta de Sonido", "Tarjeta de Red"],
+      correctAnswer: "Tarjeta de Sonido",
+    },
+    {
+      question: "¿Cuál de los siguientes periféricos se utiliza para ingresar datos en una computadora?",
+      possibleAnswers: ["Impresora", "Monitor", "Teclado", "Unidad de Almacenamiento Externo"],
+      correctAnswer: "Teclado",
+    },
+    {
+      question: "¿Cuál de las siguientes tecnologías de pantalla utiliza cristales líquidos para producir imágenes?",
+      possibleAnswers: ["CRT", "OLED", "Plasma", "CRT"],
+      correctAnswer: "OLED",
+    },
+    {
+      question: "¿Qué es un firmware?",
+      possibleAnswers: ["Un tipo de software que se instala en el sistema operativo", "Un tipo de memoria volátil utilizada para almacenar datos temporales", "Un software especializado que está integrado en un hardware para controlar su funcionamiento", "Un protocolo de comunicación de red"],
+      correctAnswer: "Un software especializado que está integrado en un hardware para controlar su funcionamiento",
+    },
+    {
+      question: "¿Cuál es un firewall?",
+      possibleAnswers: ["Un software que protege contra virus", "Un dispositivo que filtra el tráfico de red para prevenir accesos no autorizados", "Un protocolo de encriptación de datos", "Un tipo de ataque cibernético"],
+      correctAnswer: "Un dispositivo que filtra el tráfico de red para prevenir accesos no autorizados",
+    },
+    {
+      question: "¿Qué es un ransomware?",
+      possibleAnswers: ["Un tipo de virus que se propaga a través de correos electrónicos", "Un software que cifra los datos de una víctima y exige un rescate para liberarlos", "Un programa diseñado para mejorar el rendimiento del sistema", "Un sistema de autenticación multifactor"],
+      correctAnswer: "Un software que cifra los datos de una víctima y exige un rescate para liberarlos",
+    },
+    {
+      question: "¿Cuál de estos es un antivirus para Linux?",
+      possibleAnswers: ["Norton", "Avast", "McAfee", "Kaspersky"],
+      correctAnswer: "Avast",
+    },
+    {
+      question: "¿Qué es un diagrama de flujo?",
+      possibleAnswers: ["Un gráfico que muestra la relación entre diferentes tablas en una base de datos", "Un esquema visual que representa los pasos secuenciales en un proceso o algoritmo", "Un documento que describe la estructura de un programa de software", "Un tipo de análisis utilizado para optimizar el rendimiento de un sistema"],
+      correctAnswer: "Un esquema visual que representa los pasos secuenciales en un proceso o algoritmo",
+    },
+    {
+      question: "¿Cuál de estos no es una palabra reservada en Java?",
+      possibleAnswers: ["class", "static", "function", "import"],
+      correctAnswer: "function",
+    },
+    {
+      question: "¿Qué son las variables de cadena?",
+      possibleAnswers: ["Variables que almacenan valores numéricos con decimales", "Variables que contienen datos estructurados como arrays o listas", "Variables que almacenan secuencias de caracteres", "Variables que guardan direcciones de memoria"],
+      correctAnswer: "Variables que almacenan secuencias de caracteres",
+    },
+    {
+      question: "¿Qué es una memoria virtual?",
+      possibleAnswers: ["Un tipo de memoria física instalada en el hardware del sistema", "Un sistema de almacenamiento en la nube para guardar archivos y datos", "Un método que utiliza el espacio en disco duro para ampliar la memoria RAM disponible", "Una técnica de compresión de datos utilizada para mejorar la velocidad de la CPU"],
+      correctAnswer: "Un método que utiliza el espacio en disco duro para ampliar la memoria RAM disponible",
+    },
+    {
+      question: "¿Qué significa CSS?",
+      possibleAnswers: ["Cascading Style Sheets", "Computer Style System", "Creative Style Script", "Cascading Script Sheets"],
+      correctAnswer: "Cascading Style Sheets",
+    },
+    {
+      question: "¿Qué significa HTML?",
+      possibleAnswers: ["Hypertext Markup Language", "Hyperlink Text Markup Language", "Hightext Markup Language", "Hypertext Multi Language"],
+      correctAnswer: "Hypertext Markup Language",
+    },
+    {
+      question: "¿Cuál es el protocolo IP más nuevo?",
+      possibleAnswers: ["IPv4", "IPv5", "IPv6", "IPv7"],
+      correctAnswer: "IPv6",
+    },
+    {
+      question: "¿Qué tipo de archivo no aceptan los smartphones Apple?",
+      possibleAnswers: [".mp3", ".apk", ".jpg", ".pdf"],
+      correctAnswer: ".apk",
+    },
+    {
+      question: "¿Qué es un diagrama UML?",
+      possibleAnswers: ["Un gráfico utilizado para crear bases de datos", "Un esquema visual que representa un sistema o proceso de software", "Un diagrama de flujo para redes", "Un formato para codificar imágenes"],
+      correctAnswer: "Un esquema visual que representa un sistema o proceso de software",
+    },
+    {
+      question: "¿Qué significa DER en informática?",
+      possibleAnswers: ["Datos de Entrada Remota", "Diagrama Entidad de flujo", "Diagrama Entidad Relación", "Diagrama de flujo de entrada"],
+      correctAnswer: "Diagrama Entidad Relación",
+    },
+    {
+      question: "¿Qué es polimorfismo en programación orientada a objetos?",
+      possibleAnswers: ["La capacidad de un objeto para tener múltiples formas", "La habilidad de heredar de múltiples clases", "La capacidad de sobrescribir métodos", "La habilidad de cambiar el tipo de variable dinámicamente"],
+      correctAnswer: "La capacidad de un objeto para tener múltiples formas",
+    },
+    {
+      question: "¿Qué es herencia en programación orientada a objetos?",
+      possibleAnswers: ["El proceso en el que una clase adquiere las propiedades y comportamientos de otra clase", "La capacidad de un método para aceptar diferentes tipos de parámetros", "Un proceso en el que una clase elimina propiedades de otra clase", "La creación de múltiples instancias de una clase"],
+      correctAnswer: "El proceso en el que una clase adquiere las propiedades y comportamientos de otra clase",
+    },
+    {
+      question: "¿Cuál de estos lenguajes de programación NO es orientado a objetos (POO)?",
+      possibleAnswers: ["Java", "Python", "C++", "C"],
+      correctAnswer: "C",
+    },
+    {
+      question: "¿Qué es un operador ternario? ",
+      possibleAnswers: ["Un operador que asigna variables", "Un operador que evalúa una condición y devuelve un valor según sea verdadera o falsa", "Un operador que suma tres números"],
+      correctAnswer: "Un operador que evalúa una condición y devuelve un valor según sea verdadera o falsa",
+    },
+    {
+      question: "¿Qué es la máquina Enigma y para qué se utilizó?",
+      possibleAnswers: ["Un dispositivo utilizado para hacer cálculos matemáticos complejos", "Una máquina de cifrado utilizada por los alemanes durante la Segunda Guerra Mundial para codificar mensajes", "Una máquina de descifrado que fue creada por Alan Turing", "Un sistema de comunicaciones utilizado en barcos de guerra"],
+      correctAnswer: "Una máquina de cifrado utilizada por los alemanes durante la Segunda Guerra Mundial para codificar mensajes",
+    },
+    {
+      question: "¿Cuántos kilobytes son un gigabyte?",
+      possibleAnswers: ["1000 kilobytes", "1024 kilobytes", "100,000 kilobytes", "1,048,576 kilobytes"],
+      correctAnswer: "1,048,576 kilobytes",
+    },
+    {
+      question: "¿Cuál es la pieza de hardware más importante en una computadora?",
+      possibleAnswers: ["El teclado", "El disco duro", "La placa madre", "La unidad central de procesamiento (CPU)"],
+      correctAnswer: "La unidad central de procesamiento (CPU)",
+    },
+    {
+      question: "Protocolo de enrutamiento basado en el estado de enlace que calcula la mejor ruta considerando el estado actual de la red",
+      possibleAnswers: ["DHCP", "RIP", "IGRP", "OSPF"],
+      correctAnswer: "OSPF",
+    },
+    {
+      question: "¿Qué tipo de archivo se usa en Microsoft Word?",
+      possibleAnswers: [".xlsx", ".doc", ".docx", ".xdoc"],
+      correctAnswer: ".docx",
+    },
+    {
+      question: "¿Qué tipo de archivo se utiliza en Excel?",
+      possibleAnswers: [".doc", ".xlsx", ".ecxe", ".xlls"],
+      correctAnswer: ".xlsx",
+    },
+    {
+      question: "¿Qué significa SSD?",
+      possibleAnswers: ["Unidad de almacenamiento en estado sólido", "Sistema de soporte de datos", "Disco de almacenamiento tradicional", "Sistema de almacenamiento digital"],
+      correctAnswer: "Unidad de almacenamiento en estado sólido",
+    },
+    {
+      question: "¿Qué significa HDD?",
+      possibleAnswers: ["Disco duro mecánico", "Unidad de almacenamiento en estado sólido", "Disco de alta definición", "Dispositivo de almacenamiento digital"],
+      correctAnswer: "Disco duro mecánico",
+    },
+    {
+      question: "¿Qué es pseudocódigo?",
+      possibleAnswers: ["Un lenguaje de programación de alto nivel", "Un método para describir algoritmos usando una notación similar a la del lenguaje natural", "Un tipo de código ejecutable directamente por una máquina", "Un formato específico de lenguaje de programación"],
+      correctAnswer: "Un método para describir algoritmos usando una notación similar a la del lenguaje natural",
+    },
+    {
+      question: "¿Qué es un sistema de archivos?",
+      possibleAnswers: ["Un tipo de software que edita imágenes", "La estructura utilizada para organizar y almacenar archivos en un disco", "Un protocolo de red para compartir archivos", "Un lenguaje de programación"],
+      correctAnswer: "La estructura utilizada para organizar y almacenar archivos en un disco",
+    },
+    {
+      question: "¿Qué es un driver?",
+      possibleAnswers: ["Un dispositivo de almacenamiento externo", "Un software que permite al sistema operativo comunicarse con el hardware", "Un tipo de virus informático", "Un protocolo de comunicación"],
+      correctAnswer: "Un software que permite al sistema operativo comunicarse con el hardware",
+    },
+    {
+      question: "¿Qué es una red VPN?",
+      possibleAnswers: ["Una red de área local", "Una red privada virtual que cifra la conexión a Internet", "Un protocolo de transferencia de archivos", "Un tipo de malware"],
+      correctAnswer: "Una red privada virtual que cifra la conexión a Internet",
+    },
+    {
+      question: "¿Qué es la encriptación?",
+      possibleAnswers: ["El proceso de compresión de datos", "El proceso de codificar datos para proteger la información", "La creación de copias de seguridad", "La eliminación de archivos temporales"],
+      correctAnswer: "El proceso de codificar datos para proteger la información",
+    },
+    {
+      question: "¿Qué es un script en programación?",
+      possibleAnswers: ["Un tipo de hardware de almacenamiento", "Un conjunto de instrucciones escritas en un lenguaje de programación para realizar tareas específicas", "Un protocolo de comunicación de red", "Un tipo de archivo de imagen"],
+      correctAnswer: "Un conjunto de instrucciones escritas en un lenguaje de programación para realizar tareas específicas",
+    },
+    {
+      question: "¿Qué es un sistema de archivos FAT32?",
+      possibleAnswers: ["Un protocolo de red que sirve para conectar a internet", "Un sistema de archivos utilizado para gestionar y organizar datos", "Un tipo de virus informático", "Un sistema operativo para servidores"],
+      correctAnswer: "Un sistema de archivos utilizado para gestionar y organizar datos",
+    },
+    {
+      question: "¿Cuál es la principal función de la BIOS en una computadora?",
+      possibleAnswers: ["Administrar la memoria RAM", "Iniciar y probar el hardware al encender la computadora", "Ejecutar programas de usuario al iniciar", "Proteger contra malware antes de encender la computadora"],
+      correctAnswer: "Iniciar y probar el hardware al encender la computadora",
+    },
+    {
+      question: "¿Qué significa BIOS?",
+      possibleAnswers: ["Basic Integrated Operating System", "Basic Input/Output System", "Binary Input/Output Service", "Basic Interface for Operating Systems"],
+      correctAnswer: "Basic Input/Output System",
+    },
+    {
       question: "",
       possibleAnswers: ["", "", "", ""],
       correctAnswer: "",
