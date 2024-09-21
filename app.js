@@ -1,4 +1,5 @@
 import { questions } from "./questions.js";
+import { groups, groupPoints } from "./functions.js"
 
 const letters = ["A", "B", "C", "D", "E"];
 let num = [];
@@ -9,6 +10,7 @@ var correct = new Audio('songs/correct.mp3');
 const questionContainer = document.getElementById("questionContainer");
 const answerContainer = document.getElementById("answerContainer");
 const popUp = document.getElementById("popUp");
+const pointsContainer = document.getElementById("pointsContainer");
 const popUpContainer = document.getElementById("popUpContainer");
 
 // Toggle popup from hidden to show or vice versa
@@ -31,20 +33,25 @@ let index = getRandomNumberWithoutRepetition(0, (questions.length-1), num);
 
 function handleQuestion(index) {
   let answerLength = questions[index].possibleAnswers.length;
-  let i=0;
   num.push(index);
   nume = []
   questionContainer.innerHTML = `<p>${questions[index].question}</p>`;
 
   answerContainer.innerHTML = "";
 
-  while (i < answerLength) {
+  for (let i = 0; i < answerLength; i++) {
     possibleRandom = getRandomNumberWithoutRepetition(0, answerLength, nume);
     nume.push(possibleRandom);
     answerContainer.innerHTML += `<div><button><p class = "button">${letters[i]}</p><p>${questions[index].possibleAnswers[possibleRandom]}</p></button></div>`;
-    i++;
   }
-  console.log(nume);
+
+  pointsContainer.innerHTML = "";
+
+  for (let i = 0; i < groups.length; i++) {
+    console.log(groupPoints[i].point);
+    pointsContainer.innerHTML += `<div><span style='background-color: ${groups[i]};'></span><p style='color: ${groups[i]};'>${groupPoints[i].point}</p></div>`;
+  }
+
   let answers = document.querySelectorAll("button");
 
   answers.forEach((answer) => {
@@ -72,8 +79,8 @@ popUpContainer.addEventListener("click", (e) => {
     popUp.innerHTML = `¡Gracias por participar!`;
     popUp.style.color = "pink";
   } else {
-    showPopUp();
     handleQuestion(getRandomNumberWithoutRepetition(0, (questions.length-1), num));
+    showPopUp();
   } 
 });
 
