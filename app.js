@@ -38,7 +38,7 @@ function getRandomNumberWithoutRepetition (min, max, array) {
 let index = getRandomNumberWithoutRepetition(0, questions.length, num);
 
 function handleQuestion(index) {
-  console.log(localStorage.Group2);
+  console.log(questions[0].correctAnswer.length);
   num.push(index);
   nume = []
   questionContainer.innerHTML = `<p>${questions[index].question}</p>`;

@@ -52,7 +52,7 @@ html, body {
   .container .answer-container div {
     display: flex;
     margin: auto;
-    width: 45vw;
+    width: 40vw;
     height: 30%;
     align-items: center;
     justify-content: center;

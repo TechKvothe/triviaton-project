@@ -1,5 +1,4 @@
-import { plus, minus } from "./pointsApp.js"
-import { load } from "./pointsApp.js";
+import { plus, minus, load } from "./pointsApp.js"
 
 export function clickPlusHandler(e) {
     switch (`Group${e.target.id.substr(5)}`) {

@@ -1,7 +1,7 @@
 import * as fun from "./functions.js";
 
 export const questions = [
-/*    {
+    {
       question: "¿Qué es un “div” en HTML?",
       possibleAnswers: ["Un tipo de enlace que dirige a otra página web", "Un elemento en línea que se usa para añadir imágenes", "Un contenedor de bloque utilizado para agrupar y dar formato a otros elementos", "Un atributo que se usa para agregar estilos CSS"],
       correctAnswer: "Un contenedor de bloque utilizado para agrupar y dar formato a otros elementos",
@@ -263,7 +263,7 @@ export const questions = [
       correctAnswer: "10 Gbps",
     },
     {
-      question: "¿Qué es el protocolo IEEE 802?1Q, también conocido como dot1Q?",
+      question: "¿Qué es el protocolo IEEE 802.1Q, también conocido como dot1Q?",
       possibleAnswers: ["Un protocolo para asegurar las comunicaciones en redes inalámbricas", "Mecanismo que permita a múltiples redes compartir de forma transparente el mismo medio físico, sin problemas de interferencia entre ellas (Trunking)", "Un protocolo de encriptación utilizado en redes locales", "Un sistema para gestionar la asignación de direcciones IP"],
       correctAnswer: "Mecanismo que permita a múltiples redes compartir de forma transparente el mismo medio físico, sin problemas de interferencia entre ellas (Trunking)",
     },
@@ -344,7 +344,7 @@ export const questions = [
     },
     {
       question: "¿Cuál de las siguientes tecnologías de pantalla utiliza cristales líquidos para producir imágenes?",
-      possibleAnswers: ["CRT", "OLED", "Plasma", "CRT"],
+      possibleAnswers: ["CRT", "OLED", "Plasma"],
       correctAnswer: "OLED",
     },
     {
@@ -496,7 +496,7 @@ export const questions = [
       question: "¿Qué es una red VPN?",
       possibleAnswers: ["Una red de área local", "Una red privada virtual que cifra la conexión a Internet", "Un protocolo de transferencia de archivos", "Un tipo de malware"],
       correctAnswer: "Una red privada virtual que cifra la conexión a Internet",
-    },*/
+    },
     {
       question: "¿Qué es la encriptación?",
       possibleAnswers: ["El proceso de compresión de datos", "El proceso de codificar datos para proteger la información", "La creación de copias de seguridad", "La eliminación de archivos temporales"],

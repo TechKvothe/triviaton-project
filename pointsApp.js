@@ -8,7 +8,7 @@ localStorage.setItem("Group3", 0);
 localStorage.setItem("Group4", 0);
 
 
-export const pointsContainerTwo = document.getElementById("puntosContenedor");
+export const pointsContainerTwo = document.getElementById("pointsContainer");
 export let plus = [];
 export let minus = [];
 
@@ -17,7 +17,7 @@ export function load() {
     pointsContainerTwo.innerHTML = "";
     
     for (let i = 0; i < groups.length; i++) {
-        pointsContainerTwo.innerHTML += `<div><span style='background-color: ${groups[i]};'></span><p id='group-${i+1}' style='color: ${groups[i]}; font-size: 2rem; margin:0; padding:0;'>${localStorage.getItem(`Group${i+1}`)}</p><button id='plus-${i+1}'>+</button><button id='minus-${i+1}'>-</button></div>`;
+        pointsContainerTwo.innerHTML += `<div><p id='group-${i+1}' style='color: ${groups[i]}; font-size: 4rem; margin:0; padding:0;'>${localStorage.getItem(`Group${i+1}`)}</p><div style='width:40%; height:100%; display:flex; flex-direction:column; flex-wrap:wrap;'><button id='plus-${i+1}' style='color: ${groups[i]}; font-size: 4rem; display:flex; align-items:center; justify-content:center; background:none; border:none;'>+</button><button id='minus-${i+1}' style='display:flex; align-items:center; justify-content:center; color: ${groups[i]}; font-size: 4rem; background:none; border:none;'>-</button></div></div>`;
     }
 
     for (let i = 0; i < groups.length; i++) {
