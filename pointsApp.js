@@ -1,29 +1,23 @@
-import { groups, groupPoints } from "./functions.js"
+import { groups } from "./functions.js"
+import { clickMinusHandler, clickPlusHandler } from "./events.js"
 
-let plus = [];
-let minus = [];
-const pointsContainerTwo = window.document.getElementById("puntosContenedor");
+localStorage.clear();
+localStorage.setItem("Group1", 0);
+localStorage.setItem("Group2", 0);
+localStorage.setItem("Group3", 0);
+localStorage.setItem("Group4", 0);
 
-function clickPlusHandler(e) {
-    groupPoints[(e.target.id[(e.target.id.length-1)] - 1)].point++;
-    console.log(groupPoints[(e.target.id[(e.target.id.length-1)] - 1)].point);
-    load();
-}
 
-function clickMinusHandler(e) {
-    if (groupPoints[(e.target.id[(e.target.id.length-1)] - 1)].point > 0) {
-        groupPoints[(e.target.id[(e.target.id.length-1)] - 1)].point--;
-    load();
-    }
-    console.log(groupPoints[(e.target.id[(e.target.id.length-1)] - 1)].point);
-}
+export const pointsContainerTwo = document.getElementById("puntosContenedor");
+export let plus = [];
+export let minus = [];
 
-function load() {
+export function load() {
 
     pointsContainerTwo.innerHTML = "";
     
     for (let i = 0; i < groups.length; i++) {
-        pointsContainerTwo.innerHTML += `<div><span style='background-color: ${groups[i]};'></span><p id='group-${i+1}' style='color: ${groups[i]};'>${groupPoints[i].point}</p><button id='plus-${i+1}'>+</button><button id='minus-${i+1}'>-</button></div>`;
+        pointsContainerTwo.innerHTML += `<div><span style='background-color: ${groups[i]};'></span><p id='group-${i+1}' style='color: ${groups[i]}; font-size: 2rem; margin:0; padding:0;'>${localStorage.getItem(`Group${i+1}`)}</p><button id='plus-${i+1}'>+</button><button id='minus-${i+1}'>-</button></div>`;
     }
 
     for (let i = 0; i < groups.length; i++) {
@@ -34,7 +28,7 @@ function load() {
     plus.forEach((plusButton) => {
         plusButton.addEventListener("click", clickPlusHandler, false);
     });
-
+    
     minus.forEach((minusButton) => {
         minusButton.addEventListener("click", clickMinusHandler, false);
     });

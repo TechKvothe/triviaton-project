@@ -1,7 +1,7 @@
 import * as fun from "./functions.js";
 
 export const questions = [
-    {
+/*    {
       question: "¿Qué es un “div” en HTML?",
       possibleAnswers: ["Un tipo de enlace que dirige a otra página web", "Un elemento en línea que se usa para añadir imágenes", "Un contenedor de bloque utilizado para agrupar y dar formato a otros elementos", "Un atributo que se usa para agregar estilos CSS"],
       correctAnswer: "Un contenedor de bloque utilizado para agrupar y dar formato a otros elementos",
@@ -496,7 +496,7 @@ export const questions = [
       question: "¿Qué es una red VPN?",
       possibleAnswers: ["Una red de área local", "Una red privada virtual que cifra la conexión a Internet", "Un protocolo de transferencia de archivos", "Un tipo de malware"],
       correctAnswer: "Una red privada virtual que cifra la conexión a Internet",
-    },
+    },*/
     {
       question: "¿Qué es la encriptación?",
       possibleAnswers: ["El proceso de compresión de datos", "El proceso de codificar datos para proteger la información", "La creación de copias de seguridad", "La eliminación de archivos temporales"],
@@ -521,11 +521,6 @@ export const questions = [
       question: "¿Qué significa BIOS?",
       possibleAnswers: ["Basic Integrated Operating System", "Basic Input/Output System", "Binary Input/Output Service", "Basic Interface for Operating Systems"],
       correctAnswer: "Basic Input/Output System",
-    },
-    {
-      question: "",
-      possibleAnswers: ["", "", "", ""],
-      correctAnswer: "",
     },
 ];
   
