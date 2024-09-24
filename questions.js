@@ -1,7 +1,7 @@
 import * as fun from "./functions.js";
 
 export const questions = [
-    {
+/*    {
       question: "¿Qué es un “div” en HTML?",
       possibleAnswers: ["Un tipo de enlace que dirige a otra página web", "Un elemento en línea que se usa para añadir imágenes", "Un contenedor de bloque utilizado para agrupar y dar formato a otros elementos", "Un atributo que se usa para agregar estilos CSS"],
       correctAnswer: "Un contenedor de bloque utilizado para agrupar y dar formato a otros elementos",
@@ -506,7 +506,7 @@ export const questions = [
       question: "¿Qué es un script en programación?",
       possibleAnswers: ["Un tipo de hardware de almacenamiento", "Un conjunto de instrucciones escritas en un lenguaje de programación para realizar tareas específicas", "Un protocolo de comunicación de red", "Un tipo de archivo de imagen"],
       correctAnswer: "Un conjunto de instrucciones escritas en un lenguaje de programación para realizar tareas específicas",
-    },
+    },*/
     {
       question: "¿Qué es un sistema de archivos FAT32?",
       possibleAnswers: ["Un protocolo de red que sirve para conectar a internet", "Un sistema de archivos utilizado para gestionar y organizar datos", "Un tipo de virus informático", "Un sistema operativo para servidores"],

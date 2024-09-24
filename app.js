@@ -18,6 +18,7 @@ const answerContainer = document.getElementById("answerContainer");
 const popUp = document.getElementById("popUp");
 const pointsContainer = document.getElementById("pointsContainer");
 const popUpContainer = document.getElementById("popUpContainer");
+const presentation = document.getElementById("presentation");
 
 // Toggle popup from hidden to show or vice versa
 function showPopUp() {
@@ -85,6 +86,10 @@ popUpContainer.addEventListener("click", (e) => {
     handleQuestion(getRandomNumberWithoutRepetition(0, questions.length, num));
     showPopUp();
   }
+});
+
+presentation.addEventListener("click", (e) => {
+  presentation.classList.toggle("hide");  
 });
 
 handleQuestion(index);
