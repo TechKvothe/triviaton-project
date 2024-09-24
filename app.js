@@ -19,6 +19,7 @@ const popUp = document.getElementById("popUp");
 const pointsContainer = document.getElementById("pointsContainer");
 const popUpContainer = document.getElementById("popUpContainer");
 const presentation = document.getElementById("presentation");
+const presentationButton = document.getElementById("presentationButton");
 
 // Toggle popup from hidden to show or vice versa
 function showPopUp() {
@@ -39,7 +40,10 @@ function getRandomNumberWithoutRepetition (min, max, array) {
 let index = getRandomNumberWithoutRepetition(0, questions.length, num);
 
 function handleQuestion(index) {
-  console.log(questions[0].correctAnswer.length);
+  correct.currentTime = 0;
+  wrong.currentTime = 0;
+  correct.pause();
+  wrong.pause();
   num.push(index);
   nume = []
   questionContainer.innerHTML = `<p>${questions[index].question}</p>`;
@@ -57,7 +61,7 @@ function handleQuestion(index) {
     pointsContainer.innerHTML += `<div><span style='background-color: ${groups[i]};'></span><p style='color: ${groups[i]}; font-size: 2rem; margin:0; padding:0;'>${localStorage.getItem(`Group${i+1}`)}</p></div>`;
   }1
   
-  let answers = document.querySelectorAll("button");
+  let answers = answerContainer.querySelectorAll("button");
 
   answers.forEach((answer) => {
     answer.addEventListener("click", (e) => {
@@ -65,13 +69,11 @@ function handleQuestion(index) {
         popUp.innerHTML = `¡Correcto!`;
         popUp.style.color = "green";
         correct.play();
-        correct.currentTime = 0;
         showPopUp();
       } else {
         popUp.innerHTML = `¡Incorrecto!`;
         popUp.style.color = "red";
         wrong.play();
-        wrong.currentTime = 0;
         showPopUp();
       }
     });
@@ -88,8 +90,8 @@ popUpContainer.addEventListener("click", (e) => {
   }
 });
 
-presentation.addEventListener("click", (e) => {
-  presentation.classList.toggle("hide");  
+presentationButton.addEventListener("click", (e) => {
+  presentation.classList.toggle("hide");
 });
 
 handleQuestion(index);
