@@ -21,16 +21,24 @@ export function clickPlusHandler(e) {
 export function clickMinusHandler(e) {
     switch (`Group${e.target.id.substr(6)}`) {
         case "Group1":
-            localStorage.Group1--;
+            if (localStorage.Group1 > 0) {
+                localStorage.Group1--;
+            }
             break;
         case "Group2":
-            localStorage.Group2--;
+            if (localStorage.Group2 > 0) {
+                localStorage.Group2--;
+            }
             break;
         case "Group3":
-            localStorage.Group3--;
+            if (localStorage.Group3 > 0) {
+                localStorage.Group3--;
+            }
             break;
         case "Group4":
-            localStorage.Group4--;
+            if (localStorage.Group4 > 0) {
+                localStorage.Group4--;
+            }
             break;
     }
     load();

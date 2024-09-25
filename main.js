@@ -12,6 +12,7 @@ const createWindow = () => {
     width: 800,
     height: 600,
     icon: 'images/brain-icon.png',
+    show: false,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
       devTools: true
@@ -19,9 +20,11 @@ const createWindow = () => {
   });
 
   const pointsWindow = new BrowserWindow({
+    parent: mainWindow,
     width: 800,
     height: 600,
     icon: 'images/brain-icon.png',
+    show: false,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
       devTools: true
@@ -34,6 +37,14 @@ const createWindow = () => {
   
   pointsWindow.setMenuBarVisibility(false);
   pointsWindow.loadFile('points.html');
+
+  mainWindow.once('ready-to-show', () => {
+    mainWindow.show()
+  });
+
+  pointsWindow.once('ready-to-show', () => {
+    pointsWindow.show()
+  });
 
   
   mainWindow.once('closed', () => {
