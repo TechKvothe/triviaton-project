@@ -13,6 +13,7 @@ let nume = [];
 let possibleRandom;
 var wrong = new Audio('songs/wrong.mp3');
 var correct = new Audio('songs/correct.mp3');
+const container = document.getElementById("container");
 const questionContainer = document.querySelector(".question-container");
 const answerContainer = document.getElementById("answerContainer");
 const popUp = document.getElementById("popUp");
@@ -92,6 +93,7 @@ popUpContainer.addEventListener("click", (e) => {
 
 presentationButton.addEventListener("click", (e) => {
   presentation.classList.toggle("hide");
+  container.classList.toggle("show");
 });
 
 handleQuestion(index);
