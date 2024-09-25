@@ -25,6 +25,7 @@ const createWindow = () => {
     height: 600,
     icon: path.join(__dirname, 'assets/icons/win/icon.ico'),
     show: false,
+    titleBarStyle: 'hiddenInset',
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
       devTools: true
@@ -35,6 +36,7 @@ const createWindow = () => {
   mainWindow.setMenuBarVisibility(false);
   mainWindow.loadFile('index.html');
   
+  pointsWindow.setClosable(false);
   pointsWindow.setMenuBarVisibility(false);
   pointsWindow.loadFile('points.html');
 
