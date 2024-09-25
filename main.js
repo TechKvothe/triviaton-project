@@ -11,7 +11,7 @@ const createWindow = () => {
   const mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
-    icon: 'images/brain-icon.png',
+    icon: path.join(__dirname, 'assets/icons/win/icon.ico'),
     show: false,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
@@ -23,7 +23,7 @@ const createWindow = () => {
     parent: mainWindow,
     width: 800,
     height: 600,
-    icon: 'images/brain-icon.png',
+    icon: path.join(__dirname, 'assets/icons/win/icon.ico'),
     show: false,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
@@ -45,7 +45,6 @@ const createWindow = () => {
   pointsWindow.once('ready-to-show', () => {
     pointsWindow.show()
   });
-
   
   mainWindow.once('closed', () => {
     app.quit();
