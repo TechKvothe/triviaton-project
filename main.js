@@ -35,7 +35,6 @@ const createWindow = () => {
   mainWindow.setMenuBarVisibility(false);
   mainWindow.loadFile('index.html');
   
-  pointsWindow.setClosable(false);
   pointsWindow.setMenuBarVisibility(false);
   pointsWindow.loadFile('points.html');
 
