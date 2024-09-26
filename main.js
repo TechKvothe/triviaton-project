@@ -20,7 +20,6 @@ const createWindow = () => {
   });
 
   const pointsWindow = new BrowserWindow({
-    parent: mainWindow,
     width: 800,
     height: 600,
     icon: path.join(__dirname, 'assets/icons/win/icon.ico'),
