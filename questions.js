@@ -6,7 +6,7 @@ export const questions = [
       possibleAnswers: ["Un tipo de enlace que dirige a otra página web", "Un elemento en línea que se usa para añadir imágenes", "Un contenedor de bloque utilizado para agrupar y dar formato a otros elementos", "Un atributo que se usa para agregar estilos CSS"],
       correctAnswer: "Un contenedor de bloque utilizado para agrupar y dar formato a otros elementos",
     },
-    {
+/*    {
       question: "¿Cómo se imprime un \"Hola Mundo\" en Java?",
       possibleAnswers: ["echo \"Hola Mundo\";", "System.out.println(\"Hola Mundo\");", "print(\"Hola Mundo\");", "Console.WriteLine(\"Hola Mundo\");"],
       correctAnswer: "System.out.println(\"Hola Mundo\");",
@@ -521,6 +521,6 @@ export const questions = [
       question: "¿Qué significa BIOS?",
       possibleAnswers: ["Basic Integrated Operating System", "Basic Input/Output System", "Binary Input/Output Service", "Basic Interface for Operating Systems"],
       correctAnswer: "Basic Input/Output System",
-    },
+    },*/
 ];
   

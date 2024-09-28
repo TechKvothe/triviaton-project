@@ -46,7 +46,13 @@ function handleQuestion(index) {
   correct.pause();
   wrong.pause();
   num.push(index);
-  nume = []
+  nume = [];
+
+  /*if (questions[index].question.length) {
+    
+  }*/
+
+  console.log(questions[index].question.length);
   questionContainer.innerHTML = `<p>${questions[index].question}</p>`;
 
   answerContainer.innerHTML = "";
@@ -54,13 +60,13 @@ function handleQuestion(index) {
   for (let i = 0; i < questions[index].possibleAnswers.length; i++) {
     possibleRandom = getRandomNumberWithoutRepetition(0, questions[index].possibleAnswers.length, nume);
     nume.push(possibleRandom);
-    answerContainer.innerHTML += `<div><button><p class = "button">${letters[i]}</p><p>${questions[index].possibleAnswers[possibleRandom]}</p></button></div>`;
+    answerContainer.innerHTML += `<div><button><p class = "letters">${letters[i]}</p><p>${questions[index].possibleAnswers[possibleRandom]}</p></button></div>`;
   }
 
   pointsContainer.innerHTML = "";
   for (let i = 0; i < groups.length; i++) {
     pointsContainer.innerHTML += `<div><span style='background-color: ${groups[i]};'></span><p style='color: ${groups[i]}; font-size: 2rem; margin:0; padding:0;'>${localStorage.getItem(`Group${i+1}`)}</p></div>`;
-  }1
+  }
   
   let answers = answerContainer.querySelectorAll("button");
 
