@@ -109,7 +109,6 @@ body {
 
 .container .answer-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   height: 60%;
   width: 100%;
   align-items: center;

@@ -6,7 +6,7 @@ export const questions = [
       possibleAnswers: ["Un tipo de enlace que dirige a otra página web", "Un elemento en línea que se usa para añadir imágenes", "Un contenedor de bloque utilizado para agrupar y dar formato a otros elementos", "Un atributo que se usa para agregar estilos CSS"],
       correctAnswer: "Un contenedor de bloque utilizado para agrupar y dar formato a otros elementos",
     },
-/*    {
+    {
       question: "¿Cómo se imprime un \"Hola Mundo\" en Java?",
       possibleAnswers: ["echo \"Hola Mundo\";", "System.out.println(\"Hola Mundo\");", "print(\"Hola Mundo\");", "Console.WriteLine(\"Hola Mundo\");"],
       correctAnswer: "System.out.println(\"Hola Mundo\");",
@@ -83,7 +83,7 @@ export const questions = [
     },
     {
       question: "¿Qué es un certificado SSL y qué hace?",
-      possibleAnswers: ["Un archivo que almacena contraseñas de usuarios", "Un protocolo para la transferencia de archivos grandes entre servidores", "Un certificado digital que cifra la comunicación entre el servidor y el navegador para asegurar la transferencia de datos", "Un software que protege los sistemas operativos contra virus y malware"],
+      possibleAnswers: ["Un archivo que almacena contraseñas de usuarios", "Un protocolo para la transferencia de archivos grandes entre servidores", "Un certificado digital que cifra la comunicación entre el servidor y el navegador", "Un software que protege los sistemas operativos contra virus y malware"],
       correctAnswer: "Un certificado digital que cifra la comunicación entre el servidor y el navegador para asegurar la transferencia de datos",
     },
     {
@@ -103,7 +103,7 @@ export const questions = [
     },
     {
       question: "¿Qué es un algoritmo de burbujas en programación?",
-      possibleAnswers: ["Un método para crear gráficos interactivos en tiempo real", "Un algoritmo de ordenamiento que compara pares de elementos adyacentes y los intercambia si están en el orden incorrecto", "Un algoritmo de búsqueda rápida en grandes bases de datos", "Un proceso para optimizar el uso de memoria en aplicaciones"],
+      possibleAnswers: ["Un método para crear gráficos interactivos en tiempo real", "Un algoritmo de ordenamiento que compara pares de elementos adyacentes", "Un algoritmo de búsqueda rápida en grandes bases de datos", "Un proceso para optimizar el uso de memoria en aplicaciones"],
       correctAnswer: "Un algoritmo de ordenamiento que compara pares de elementos adyacentes y los intercambia si están en el orden incorrecto",
     },
     {
@@ -138,7 +138,7 @@ export const questions = [
     },
     {
       question: "¿Qué se espera de la sexta generación de la informática en el futuro?",
-      possibleAnswers: ["La creación de sistemas operativos más simples y el aumento del tamaño físico de las computadoras", "Avances en inteligencia artificial avanzada, cómputo cuántico y redes neuronales artificiales, así como mejoras en el procesamiento de datos y la interacción humano-máquina", "La introducción de válvulas de vacío en lugar de circuitos integrados y la creación de computadoras más grandes", "El desarrollo de software exclusivamente para cálculos científicos y aplicaciones militares"],
+      possibleAnswers: ["La creación de sistemas operativos más simples y el aumento del tamaño físico de las computadoras", "Avances en inteligencia artificial, cómputo cuántico y la interacción humano-máquina", "La introducción de válvulas de vacío en lugar de circuitos integrados", "El desarrollo de software exclusivamente para cálculos científicos y aplicaciones militares"],
       correctAnswer: "Avances en inteligencia artificial avanzada, cómputo cuántico y redes neuronales artificiales, así como mejoras en el procesamiento de datos y la interacción humano-máquina",
     },
     {
@@ -264,7 +264,7 @@ export const questions = [
     },
     {
       question: "¿Qué es el protocolo IEEE 802.1Q, también conocido como dot1Q?",
-      possibleAnswers: ["Un protocolo para asegurar las comunicaciones en redes inalámbricas", "Mecanismo que permita a múltiples redes compartir de forma transparente el mismo medio físico, sin problemas de interferencia entre ellas (Trunking)", "Un protocolo de encriptación utilizado en redes locales", "Un sistema para gestionar la asignación de direcciones IP"],
+      possibleAnswers: ["Un protocolo para asegurar las comunicaciones en redes inalámbricas", "Mecanismo que permite a múltiples redes compartir el mismo medio físico", "Un protocolo de encriptación utilizado en redes locales", "Un sistema para gestionar la asignación de direcciones IP"],
       correctAnswer: "Mecanismo que permita a múltiples redes compartir de forma transparente el mismo medio físico, sin problemas de interferencia entre ellas (Trunking)",
     },
     {
@@ -521,6 +521,6 @@ export const questions = [
       question: "¿Qué significa BIOS?",
       possibleAnswers: ["Basic Integrated Operating System", "Basic Input/Output System", "Binary Input/Output Service", "Basic Interface for Operating Systems"],
       correctAnswer: "Basic Input/Output System",
-    },*/
+    },
 ];
   

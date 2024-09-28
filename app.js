@@ -57,6 +57,9 @@ function handleQuestion(index) {
 
   answerContainer.innerHTML = "";
 
+  answerContainer.style.gridTemplateColumns = `repeat(${Math.round(questions[index].possibleAnswers.length/2)}, 1fr)`;
+  answerContainer.style.gridTemplateRow = `repeat(${questions[index].possibleAnswers.length}, 1fr)`;
+
   for (let i = 0; i < questions[index].possibleAnswers.length; i++) {
     possibleRandom = getRandomNumberWithoutRepetition(0, questions[index].possibleAnswers.length, nume);
     nume.push(possibleRandom);
