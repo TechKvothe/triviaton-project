@@ -51,8 +51,8 @@ function handleQuestion(index) {
   /*if (questions[index].question.length) {
     
   }*/
+  console.log(questions[index].question);
 
-  console.log(questions[index].question.length);
   questionContainer.innerHTML = `<p>${questions[index].question}</p>`;
 
   answerContainer.innerHTML = "";
@@ -64,6 +64,11 @@ function handleQuestion(index) {
     possibleRandom = getRandomNumberWithoutRepetition(0, questions[index].possibleAnswers.length, nume);
     nume.push(possibleRandom);
     answerContainer.innerHTML += `<div><button><p class = "letters">${letters[i]}</p><p>${questions[index].possibleAnswers[possibleRandom]}</p></button></div>`;
+
+    if (questions[index].possibleAnswers[possibleRandom] == questions[index].correctAnswer) {
+        console.log("Respuesta correcta");
+    }
+    
   }
 
   pointsContainer.innerHTML = "";

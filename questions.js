@@ -38,8 +38,8 @@ export const questions = [
     },
    {
       question: "¿Qué es un lenguaje de alto nivel en programación?",
-      possibleAnswers: ["Un lenguaje que está diseñado para interactuar directamente con el hardware del sistema", "Un lenguaje que proporciona una sintaxis cercana al lenguaje humano y abstrae detalles del hardware para facilitar la programación", "Un lenguaje que se utiliza únicamente para realizar cálculos matemáticos complejos", "Un lenguaje que se usa para diseñar redes y comunicaciones entre servidores"],
-      correctAnswer: "Un lenguaje que proporciona una sintaxis cercana al lenguaje humano y abstrae detalles del hardware para facilitar la programación",
+      possibleAnswers: ["Un lenguaje que está diseñado para interactuar directamente con el hardware del sistema", "Un lenguaje que proporciona una sintaxis cercana al lenguaje humano", "Un lenguaje que se utiliza únicamente para realizar cálculos matemáticos complejos", "Un lenguaje que se usa para diseñar redes y comunicaciones entre servidores"],
+      correctAnswer: "Un lenguaje que proporciona una sintaxis cercana al lenguaje humano",
     },
     {
       question: "¿Cuál fue el primer lenguaje de programación?",
@@ -53,13 +53,13 @@ export const questions = [
     },
     {
       question: "¿Qué es un IDE en programación?",
-      possibleAnswers: ["Un tipo de archivo que almacena el código fuente", "Es una herramienta de software que proporciona un entorno de programación completo para los desarrolladores de software", "Un lenguaje de programación específico para el desarrollo web", "Un protocolo de red utilizado para transferir datos entre servidores"],
-      correctAnswer: "Es una herramienta de software que proporciona un entorno de programación completo para los desarrolladores de software",
+      possibleAnswers: ["Un tipo de archivo que almacena el código fuente", "Es un entorno de programación para los desarrolladores de software", "Un lenguaje de programación específico para el desarrollo web", "Un protocolo de red utilizado para transferir datos entre servidores"],
+      correctAnswer: "Es un entorno de programación para los desarrolladores de software",
     },
     {
       question: "¿Qué es un preprocesador de CSS?",
-      possibleAnswers: ["Una herramienta que convierte CSS en HTML", "Un software que compila código CSS a un lenguaje de programación de bajo nivel", "Una herramienta que extiende las funcionalidades de CSS, añadiendo características como variables, funciones, mixins y anidación", "Un programa que optimiza imágenes para mejorar el rendimiento web"],
-      correctAnswer: "Una herramienta que extiende las funcionalidades de CSS, añadiendo características como variables, funciones, mixins y anidación",
+      possibleAnswers: ["Una herramienta que convierte CSS en HTML", "Un software que compila código CSS a un lenguaje de programación de bajo nivel", "Una herramienta que extiende las funcionalidades de CSS", "Un programa que optimiza imágenes para mejorar el rendimiento web"],
+      correctAnswer: "Una herramienta que extiende las funcionalidades de CSS",
     },
     {
       question: "¿En qué año se desarrolló C++?",
@@ -84,15 +84,15 @@ export const questions = [
     {
       question: "¿Qué es un certificado SSL y qué hace?",
       possibleAnswers: ["Un archivo que almacena contraseñas de usuarios", "Un protocolo para la transferencia de archivos grandes entre servidores", "Un certificado digital que cifra la comunicación entre el servidor y el navegador", "Un software que protege los sistemas operativos contra virus y malware"],
-      correctAnswer: "Un certificado digital que cifra la comunicación entre el servidor y el navegador para asegurar la transferencia de datos",
+      correctAnswer: "Un certificado digital que cifra la comunicación entre el servidor y el navegador",
     },
     {
       question: "¿Qué es un framework en programación?",
-      possibleAnswers: ["Un lenguaje de programación usado para crear aplicaciones web", "Infraestructura predefinida que proporciona un conjunto de herramientas, bibliotecas y patrones de diseño para facilitar el desarrollo de software o páginas web", "Un editor de texto que facilita la creación de código", "Un entorno para diseñar interfaces gráficas de usuario"],
-      correctAnswer: "Infraestructura predefinida que proporciona un conjunto de herramientas, bibliotecas y patrones de diseño para facilitar el desarrollo de software o páginas web",
+      possibleAnswers: ["Un lenguaje de programación usado para crear aplicaciones web", "Infraestructura predefinida que proporciona herramientas para facilitar el desarrollo", "Un editor de texto que facilita la creación de código", "Un entorno para diseñar interfaces gráficas de usuario"],
+      correctAnswer: "Infraestructura predefinida que proporciona herramientas para facilitar el desarrollo",
     },
     {
-      question: "¿Qué sucede cuando una columna se establece en INCREMENTO AUTOMÁTICO y alcanza su valor máximo en la tabla en MySql?",
+      question: "¿Qué sucede cuando una columna se establece en incremento automático y alcanza su valor máximo en la tabla en MySql?",
       possibleAnswers: ["La columna se reinicia automáticamente al valor inicial", "Se genera un error y no se pueden insertar más filas hasta que se ajuste el valor", "La columna comienza a contar desde números negativos", "El valor máximo se duplica para permitir más inserciones"],
       correctAnswer: "Se genera un error y no se pueden insertar más filas hasta que se ajuste el valor",
     },
@@ -104,17 +104,17 @@ export const questions = [
     {
       question: "¿Qué es un algoritmo de burbujas en programación?",
       possibleAnswers: ["Un método para crear gráficos interactivos en tiempo real", "Un algoritmo de ordenamiento que compara pares de elementos adyacentes", "Un algoritmo de búsqueda rápida en grandes bases de datos", "Un proceso para optimizar el uso de memoria en aplicaciones"],
-      correctAnswer: "Un algoritmo de ordenamiento que compara pares de elementos adyacentes y los intercambia si están en el orden incorrecto",
+      correctAnswer: "Un algoritmo de ordenamiento que compara pares de elementos adyacentes",
     },
     {
       question: "¿Qué es un lenguaje de bajo nivel en programación?",
-      possibleAnswers: ["Un lenguaje que proporciona una abstracción alta y es fácil de aprender", "Un lenguaje que está más cerca del hardware y permite un control detallado sobre los recursos del sistema", "Un lenguaje utilizado exclusivamente para diseñar interfaces de usuario", "Un lenguaje que se utiliza para crear gráficos y animaciones"],
-      correctAnswer: "Un lenguaje que está más cerca del hardware y permite un control detallado sobre los recursos del sistema",
+      possibleAnswers: ["Un lenguaje que proporciona una abstracción alta y es fácil de aprender", "Un lenguaje que está más cerca del hardware", "Un lenguaje utilizado exclusivamente para diseñar interfaces de usuario", "Un lenguaje que se utiliza para crear gráficos y animaciones"],
+      correctAnswer: "Un lenguaje que está más cerca del hardware",
     },
     {
       question: "¿Qué hechos relevantes ocurrieron durante la primera generación de la informática?",
-      possibleAnswers: ["Se crearon los microprocesadores y se introdujo el sistema operativo UNIX", "Se utilizaron válvulas de vacío y se construyeron computadoras como el ENIAC para cálculos balísticos", "Se desarrollaron los lenguajes de programación orientados a objetos y las redes de área local", "Se inventó el microprocesador Intel 4004 y se popularizaron las computadoras personales"],
-      correctAnswer: "Se utilizaron válvulas de vacío y se construyeron computadoras como el ENIAC para cálculos balísticos",
+      possibleAnswers: ["Se crearon los microprocesadores y se introdujo el sistema operativo UNIX", "Se utilizaron válvulas de vacío y se construyeron computadoras como el ENIAC", "Se desarrollaron los lenguajes de programación orientados a objetos y las redes de área local", "Se inventó el microprocesador Intel 4004 y se popularizaron las computadoras personales"],
+      correctAnswer: "Se utilizaron válvulas de vacío y se construyeron computadoras como el ENIAC",
     },
     {
       question: "¿Qué hechos relevantes ocurrieron durante la segunda generación de la informática?",
@@ -128,8 +128,8 @@ export const questions = [
     },
     {
       question: "¿Qué hechos relevantes ocurrieron durante la cuarta generación de la informática?",
-      possibleAnswers: ["Se utilizó el transistor para mejorar la velocidad y eficiencia de las computadoras", "Se desarrolló el microprocesador, lo que permitió la creación de computadoras personales más compactas", "Se introdujo el circuito integrado y se creó el sistema operativo UNIX", "Se inventaron los sistemas expertos y el procesamiento paralelo"],
-      correctAnswer: "Se desarrolló el microprocesador, lo que permitió la creación de computadoras personales más compactas",
+      possibleAnswers: ["Se utilizó el transistor para mejorar la velocidad y eficiencia de las computadoras", "La creación de computadoras personales más compactas", "Se introdujo el circuito integrado y se creó el sistema operativo UNIX", "Se inventaron los sistemas expertos y el procesamiento paralelo"],
+      correctAnswer: "La creación de computadoras personales más compactas",
     },
     {
       question: "¿Qué hechos relevantes ocurrieron durante la quinta generación de la informática?",
@@ -139,7 +139,7 @@ export const questions = [
     {
       question: "¿Qué se espera de la sexta generación de la informática en el futuro?",
       possibleAnswers: ["La creación de sistemas operativos más simples y el aumento del tamaño físico de las computadoras", "Avances en inteligencia artificial, cómputo cuántico y la interacción humano-máquina", "La introducción de válvulas de vacío en lugar de circuitos integrados", "El desarrollo de software exclusivamente para cálculos científicos y aplicaciones militares"],
-      correctAnswer: "Avances en inteligencia artificial avanzada, cómputo cuántico y redes neuronales artificiales, así como mejoras en el procesamiento de datos y la interacción humano-máquina",
+      correctAnswer: "Avances en inteligencia artificial, cómputo cuántico y la interacción humano-máquina",
     },
     {
       question: "¿Qué es una IA (Inteligencia Artificial)?",
@@ -234,13 +234,13 @@ export const questions = [
     },
     {
       question: "¿Qué es la ingeniería social?",
-      possibleAnswers: ["Un tipo de ataque que explota la confianza y el comportamiento humano para obtener información o acceso no autorizado", "Una técnica de programación para optimizar el rendimiento del software", "Un método de encriptación utilizado para proteger la comunicación en redes", "Un proceso para desarrollar hardware de computadora"],
-      correctAnswer: "Un tipo de ataque que explota la confianza y el comportamiento humano para obtener información o acceso no autorizado",
+      possibleAnswers: ["Es una técnica de manipulación que aprovecha el error humano", "Una técnica de programación para optimizar el rendimiento del software", "Un método de encriptación utilizado para proteger la comunicación en redes", "Un proceso para desarrollar hardware de computadora"],
+      correctAnswer: "Es una técnica de manipulación que aprovecha el error humano",
     },
     {
       question: "¿Qué es una inyección SQL?",
-      possibleAnswers: ["Un ataque que explota vulnerabilidades en una aplicación web para insertar o manipular consultas SQL", "Un método para mejorar el rendimiento de las bases de datos mediante el ajuste de consultas", "Un tipo de encriptación para proteger la información en una base de datos", "Un proceso para optimizar la estructura de una base de datos"],
-      correctAnswer: "Un ataque que explota vulnerabilidades en una aplicación web para insertar o manipular consultas SQL",
+      possibleAnswers: ["Un ataque que explota vulnerabilidades en una aplicación web para manipular consultas SQL", "Un método para mejorar el rendimiento de las bases de datos mediante el ajuste de consultas", "Un tipo de encriptación para proteger la información en una base de datos", "Un proceso para optimizar la estructura de una base de datos"],
+      correctAnswer: "Un ataque que explota vulnerabilidades en una aplicación web para manipular consultas SQL",
     },
     {
       question: "¿En qué año se fundó la empresa IBM (International Business Machines Corporation)?",
@@ -265,7 +265,7 @@ export const questions = [
     {
       question: "¿Qué es el protocolo IEEE 802.1Q, también conocido como dot1Q?",
       possibleAnswers: ["Un protocolo para asegurar las comunicaciones en redes inalámbricas", "Mecanismo que permite a múltiples redes compartir el mismo medio físico", "Un protocolo de encriptación utilizado en redes locales", "Un sistema para gestionar la asignación de direcciones IP"],
-      correctAnswer: "Mecanismo que permita a múltiples redes compartir de forma transparente el mismo medio físico, sin problemas de interferencia entre ellas (Trunking)",
+      correctAnswer: "Mecanismo que permite a múltiples redes compartir el mismo medio físico",
     },
     {
       question: "¿Cuál es el modelo de referencia utilizado comúnmente para comprender las redes de computadoras?",
@@ -439,8 +439,8 @@ export const questions = [
     },
     {
       question: "¿Qué es la máquina Enigma y para qué se utilizó?",
-      possibleAnswers: ["Un dispositivo utilizado para hacer cálculos matemáticos complejos", "Una máquina de cifrado utilizada por los alemanes durante la Segunda Guerra Mundial para codificar mensajes", "Una máquina de descifrado que fue creada por Alan Turing", "Un sistema de comunicaciones utilizado en barcos de guerra"],
-      correctAnswer: "Una máquina de cifrado utilizada por los alemanes durante la Segunda Guerra Mundial para codificar mensajes",
+      possibleAnswers: ["Un dispositivo utilizado para hacer cálculos matemáticos complejos", "Una máquina de cifrado para codificar mensajes", "Una máquina de descifrado que fue creada por Alan Turing", "Un sistema de comunicaciones utilizado en barcos de guerra"],
+      correctAnswer: "Una máquina de cifrado para codificar mensajes",
     },
     {
       question: "¿Cuántos kilobytes son un gigabyte?",
@@ -504,8 +504,8 @@ export const questions = [
     },
     {
       question: "¿Qué es un script en programación?",
-      possibleAnswers: ["Un tipo de hardware de almacenamiento", "Un conjunto de instrucciones escritas en un lenguaje de programación para realizar tareas específicas", "Un protocolo de comunicación de red", "Un tipo de archivo de imagen"],
-      correctAnswer: "Un conjunto de instrucciones escritas en un lenguaje de programación para realizar tareas específicas",
+      possibleAnswers: ["Un tipo de hardware de almacenamiento", "Un conjunto de instrucciones escritas en un lenguaje de programación", "Un protocolo de comunicación de red", "Un tipo de archivo de imagen"],
+      correctAnswer: "Un conjunto de instrucciones escritas en un lenguaje de programación",
     },
     {
       question: "¿Qué es un sistema de archivos FAT32?",
