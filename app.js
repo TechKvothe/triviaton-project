@@ -48,9 +48,7 @@ function handleQuestion(index) {
   num.push(index);
   nume = [];
 
-  /*if (questions[index].question.length) {
-    
-  }*/
+
   console.log(questions[index].question);
 
   questionContainer.innerHTML = `<p>${questions[index].question}</p>`;
@@ -63,7 +61,14 @@ function handleQuestion(index) {
   for (let i = 0; i < questions[index].possibleAnswers.length; i++) {
     possibleRandom = getRandomNumberWithoutRepetition(0, questions[index].possibleAnswers.length, nume);
     nume.push(possibleRandom);
-    answerContainer.innerHTML += `<div><button><p class = "letters">${letters[i]}</p><p>${questions[index].possibleAnswers[possibleRandom]}</p></button></div>`;
+
+    answerContainer.innerHTML += `<div><button><p class = "letters">${letters[i]}</p><p class = "letter${i+1}">${questions[index].possibleAnswers[possibleRandom]}</p></button></div>`;
+
+    if (questions[index].possibleAnswers[possibleRandom].length >= 50) {
+      answerContainer.querySelector(`.letter${i+1}`).style = "font-size:1.6vw";
+    } else {
+      answerContainer.querySelector(`.letter${i+1}`).style = "font-size: 1.7vw";
+    }
 
     if (questions[index].possibleAnswers[possibleRandom] == questions[index].correctAnswer) {
         console.log("Respuesta correcta");
@@ -73,10 +78,19 @@ function handleQuestion(index) {
 
   pointsContainer.innerHTML = "";
   for (let i = 0; i < groups.length; i++) {
-    pointsContainer.innerHTML += `<div><span style='background-color: ${groups[i]};'></span><p style='color: ${groups[i]}; font-size: 2rem; margin:0; padding:0;'>${localStorage.getItem(`Group${i+1}`)}</p></div>`;
+    pointsContainer.innerHTML += `<div><span style='background-color: ${groups[i]};'></span><p style='color: ${groups[i]}; font-size: 2vw; margin:0; padding:0;'>${localStorage.getItem(`Group${i+1}`)}</p></div>`;
   }
   
   let answers = answerContainer.querySelectorAll("button");
+
+  if (questions[index].question.length >= 50) {
+    questionContainer.style="font-size:2.8vw";
+  } else if (questions[index].question.length >= 20) {
+    questionContainer.style="font-size:2.9vw";
+  } else if (questions[index].question.length >= 10) {
+    questionContainer.style="font-size:3vw";
+  }
+
 
   answers.forEach((answer) => {
     answer.addEventListener("click", (e) => {
@@ -86,11 +100,17 @@ function handleQuestion(index) {
         correct.play();
         showPopUp();
       } else {
+        e.target.style = "border-color: red;";
         popUp.innerHTML = `¡Incorrecto!`;
         popUp.style.color = "red";
         wrong.play();
         showPopUp();
       }
+      answers.forEach((answer) => {
+        if (answer.textContent.substring(1) === questions[index].correctAnswer) {
+          answer.style = "border-color: green;";
+        }
+      });
     });
   });
 }

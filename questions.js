@@ -133,8 +133,8 @@ export const questions = [
     },
     {
       question: "¿Qué hechos relevantes ocurrieron durante la quinta generación de la informática?",
-      possibleAnswers: ["Se desarrollaron los primeros lenguajes de programación de alto nivel como COBOL y FORTRAN", "Se avanzó en la inteligencia artificial y se introdujeron los sistemas expertos para emular el conocimiento humano", "Se crearon las primeras computadoras basadas en válvulas de vacío y tarjetas perforadas", "Se desarrolló el microprocesador y se introdujeron las primeras computadoras personales"],
-      correctAnswer: "Se avanzó en la inteligencia artificial y se introdujeron los sistemas expertos para emular el conocimiento humano",
+      possibleAnswers: ["Se desarrollaron los primeros lenguajes de programación de alto nivel como COBOL y FORTRAN", "Se avanzó en la inteligencia artificial y se introdujeron los sistemas expertos", "Se crearon las primeras computadoras basadas en válvulas de vacío y tarjetas perforadas", "Se desarrolló el microprocesador y se introdujeron las primeras computadoras personales"],
+      correctAnswer: "Se avanzó en la inteligencia artificial y se introdujeron los sistemas expertos",
     },
     {
       question: "¿Qué se espera de la sexta generación de la informática en el futuro?",
