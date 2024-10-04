@@ -137,7 +137,6 @@ body {
   display: flex;
   margin: 0.5vw auto;
   width: 40%;
-  height: 12vh;
   padding: 0;
 }
 
@@ -147,7 +146,7 @@ body {
   align-items: center;
   justify-content: start;
   width: 100%;
-  height: 14vh;
+  height: 15vh;
   border-radius: 1rem;
   background-color: white;
   border: 4px solid #053172;
@@ -168,7 +167,7 @@ body {
 
 .container .answer-container p {
   pointer-events: none;
-  margin: auto 0.2rem;
+  margin: auto 1rem;
 }
 
 .container .answer-container button:hover {
