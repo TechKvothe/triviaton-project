@@ -49,6 +49,7 @@ body {
   border-radius: 5em;
   cursor: pointer;
   margin: 0;
+  outline: none;
 }
 
 #presentationButton:hover {
@@ -152,6 +153,7 @@ body {
   border: 4px solid #053172;
   color: #0e4ea5;
   cursor: pointer;
+  outline: none;
   padding: 0;
   margin: 0;
 }
