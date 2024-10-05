@@ -17,6 +17,35 @@ body {
   background-color: #464646;
 }
 
+#pointsIncrement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  border: 2px solid 464646;
+  border-radius: 1rem;
+  background-color: #464646;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+
+#pointsIncrement option {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
+  padding: 0;
+  margin: 0;
+}
+
+#pointsIncrement::-webkit-scrollbar {
+  display: none;
+}
+
 .container  .points-container {
   display: flex;
   align-items: center;

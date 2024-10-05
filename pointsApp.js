@@ -6,13 +6,24 @@ localStorage.setItem("Group1", 0);
 localStorage.setItem("Group2", 0);
 localStorage.setItem("Group3", 0);
 localStorage.setItem("Group4", 0);
+localStorage.setItem("Group5", 0);
+localStorage.setItem("Group6", 0);
 
 
 export const pointsContainerTwo = document.getElementById("pointsContainer");
+export const pointsIncrement = document.getElementById("pointsIncrement");
 export let plus = [];
 export let minus = [];
 
 export function load() {
+
+    console.log();
+
+    if (pointsIncrement.length < 10) {
+        for (let i = 0; i < 10; i++) {
+            pointsIncrement.innerHTML += `<option value="${i+1}">${i+1}</option>`;
+        }
+    }
 
     pointsContainerTwo.innerHTML = "";
     

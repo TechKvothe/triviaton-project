@@ -6,6 +6,10 @@ localStorage.setItem("Group1", 0);
 localStorage.setItem("Group2", 0);
 localStorage.setItem("Group3", 0);
 localStorage.setItem("Group4", 0);
+localStorage.setItem("Group5", 0);
+localStorage.setItem("Group6", 0);
+
+
 
 const letters = ["A", "B", "C", "D", "E"];
 let num = [];

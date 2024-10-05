@@ -50,7 +50,6 @@ const createWindow = () => {
     app.quit();
   });
 
-
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
 }
