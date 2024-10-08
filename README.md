@@ -1,4 +1,4 @@
-# My own docker-magento project
+# A trivia game app
 
 ## Installing
 Download and install NodeJS with npm, then run the following code
