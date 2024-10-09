@@ -85,20 +85,38 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #0034a4;
-  border-radius: 0 0 1em 1em;
-  height: 15%;
-  width: 80%;
-  margin: 0;
+  width: 100%;
 }
 
-.logo-container .logo-1 {
+.leigao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  background-color: #ffffff;
+  border-radius: 0 0 1em 1em;
+  height: 100%;
+  z-index: 2;
+}
+
+.cellshop-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0034a4;
+  border-radius: 0 0 1em 1em;
+  height: 100%;
+  width: 80%;
+  margin: auto 5px;
+}
+
+.cellshop-container .logo-1 {
   display:flex;
   width: fit-content;
   height: auto;
 }
 
-.logo-container .cellshop {
+.cellshop-container .cellshop {
   height: auto;
   margin: 0 auto;
   min-width: 100%;
@@ -106,6 +124,14 @@ body {
   width: 100%;
   max-width: 80%;
   max-height: 100%;
+}
+
+.test-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  margin: 5px 5px 0 auto;
 }
 
 .container .question-container {
