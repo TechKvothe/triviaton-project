@@ -13,8 +13,8 @@ export const questions = [
     },
     {
       question: "¿Qué significa que un lenguaje de programación sea tipado?",
-      possibleAnswers: ["Que el lenguaje solo permite tipos de datos enteros", "En un lenguaje que se requiere que definamos el tipo de dato específico de las variables", "Que el lenguaje solo funciona en sistemas operativos de 64 bits", "Que el lenguaje convierte automáticamente todas las variables a tipo cadena"],
-      correctAnswer: "En un lenguaje que se requiere que definamos el tipo de dato específico de las variables",
+      possibleAnswers: ["Que el lenguaje solo permite tipos de datos enteros", "Es un lenguaje que requiere que definamos el tipo de dato específico de las variables", "Que el lenguaje solo funciona en sistemas operativos de 64 bits", "Que el lenguaje convierte automáticamente todas las variables a tipo cadena"],
+      correctAnswer: "Es un lenguaje que requiere que definamos el tipo de dato específico de las variables",
     },
     {
       question: "¿Cuál es el lenguaje de programación más seguro y utilizado por los bancos?",
@@ -373,7 +373,7 @@ export const questions = [
       correctAnswer: "Un esquema visual que representa los pasos secuenciales en un proceso o algoritmo",
     },
     {
-      question: "¿Cuál de estos no es una palabra reservada en Java?",
+      question: "¿Cuál de estas no es una palabra reservada en Java?",
       possibleAnswers: ["class", "static", "function", "import"],
       correctAnswer: "function",
     },
