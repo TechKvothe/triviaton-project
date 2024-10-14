@@ -52,9 +52,6 @@ function handleQuestion(index) {
   num.push(index);
   nume = [];
 
-
-  console.log(questions[index].question);
-
   questionContainer.innerHTML = `<p>${questions[index].question}</p>`;
 
   answerContainer.innerHTML = "";
@@ -72,10 +69,6 @@ function handleQuestion(index) {
       answerContainer.querySelector(`.letter${i+1}`).style = "font-size:1.6vw";
     } else {
       answerContainer.querySelector(`.letter${i+1}`).style = "font-size: 1.7vw";
-    }
-
-    if (questions[index].possibleAnswers[possibleRandom] == questions[index].correctAnswer) {
-        console.log("Respuesta correcta");
     }
     
   }

@@ -15,7 +15,7 @@ const createWindow = () => {
     show: false,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
-      devTools: true
+      devTools: false
     }
   });
 
@@ -26,7 +26,7 @@ const createWindow = () => {
     show: false,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
-      devTools: true
+      devTools: false
     }
   });
 
